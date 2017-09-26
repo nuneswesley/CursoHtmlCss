@@ -1,0 +1,89 @@
+.cores{
+	position: relative;
+	padding-top: 90px;
+}
+
+.cores{
+	display: block;
+	max-width: 100%;
+}
+
+.cores label:after{
+	border: 6px solid rgba(0,0,0,0); 
+	transition: 1s;
+	content: '';
+	display: block;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+
+}
+
+.cores label:hover:after { 
+	border: 6px solid rgba(0,0,0,0.1); 
+}
+
+.cores input:checked + label:after{
+	border: 6px solid rgba(0,0,0,0.3);
+}
+
+.cores input[type=radio]{
+	display: none
+}
+
+.cores input:not(:checked) + label img{
+	display: none;
+}
+
+.produto h1{
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.produto p{
+	font-size: 1.2em;
+	font-style: italic;
+	font-bottom: 1em;
+}
+
+.produto legend{
+	display: block;
+	font: bold 0.9em/2.5 Arial;
+	text-transform: uppercase;
+}
+
+.comprar{
+	background: #91bd3c;
+	border:none;
+	color: #333;
+
+	font-size: 1.4em;
+	text-transform: uppercase;
+
+	box-shadow: 0 1px 3px #777;
+
+	display: block;
+	padding: 0.5em 1em;
+	margin: 1em 0;
+}
+
+label[for=verde]:after{
+	background-color: #33cc66;
+	left: 0;
+}
+
+label[for=rosa]:after{
+	background-color: #ff6666;
+	left: 60px;
+}
+
+label[for=azul]:after{
+	background-color: #6666ff ;
+	left: 120px;
+}
+
